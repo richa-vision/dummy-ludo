@@ -11,7 +11,7 @@ export class WebSocketClient {
 
   connect() {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const wsUrl = `${protocol}//localhost:5000/ws`;
+    const wsUrl = `${protocol}//dummy-ludo.onrender.com/ws`;
 
     this.ws = new WebSocket(wsUrl);
 
